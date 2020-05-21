@@ -228,7 +228,7 @@ body .two h2 {
   font-size: 2rem;
   padding-bottom: 3%;
 }
-@liststuff {
+.liststuff (){
   padding-top: 1%;
   padding-bottom: 1%;
   border-top: 1px solid black;
@@ -294,3 +294,4 @@ footer p {
   display: flex;
   justify-content: space-around;
 }
+
