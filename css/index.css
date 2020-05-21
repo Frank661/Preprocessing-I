@@ -1,1 +1,296 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  align-content: right;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+html nav,
+body nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: right;
+  padding: 5%;
+  padding-left: 8%;
+}
+html .one img,
+body .one img {
+  width: 22%;
+  padding-bottom: 2%;
+}
+html .one,
+body .one {
+  margin: 10%;
+  margin-top: 0%;
+  padding: 10%;
+  background-color: lightgray;
+  display: block;
+  padding-bottom: 10%;
+  margin-left: 15%;
+  margin-right: 15%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+html .one h1,
+body .one h1 {
+  font-size: 3rem;
+}
+html .one .passion,
+body .one .passion {
+  border-bottom: 1px dotted black ;
+  padding: 2%;
+  padding-left: 0%;
+}
+html .one .more,
+body .one .more {
+  padding: 2%;
+  padding-left: 0%;
+}
+html .one .more button,
+body .one .more button {
+  font-size: 1rem;
+  padding: 1%;
+  margin-top: 5%;
+  text-decoration: none;
+  color: white;
+  background-color: gray;
+  border-radius: 5px;
+}
+html .two,
+body .two {
+  margin: 10%;
+  margin-top: 0%;
+  padding: 10%;
+  padding-top: 0%;
+  display: flex;
+  padding-bottom: 10%;
+}
+html .two .Listen,
+body .two .Listen {
+  width: 100%;
+}
+html .two .Listen h2,
+body .two .Listen h2 {
+  font-size: 2rem;
+}
+html .two .stuff,
+body .two .stuff {
+  width: 100%;
+  padding-left: 3%;
+  margin-right: 0%;
+  padding-right: 0%;
+}
+html .two .stuff li,
+body .two .stuff li {
+  text-decoration: none;
+  list-style: none;
+  border: 1px solid black;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  padding-left: 2%;
+  padding-right: 10%;
+}
+html .two h2,
+body .two h2 {
+  font-size: 2rem;
+  padding-bottom: 3%;
+}
+@liststuff {
+  padding-top: 1%;
+  padding-bottom: 1%;
+  border-top: 1px solid black;
+}
+.work {
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 10%;
+  margin-top: 0%;
+}
+.work h2 {
+  font-size: 2rem;
+}
+.work .title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  border-top: 1px solid black;
+}
+.work .job1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: lightgrey;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  border-top: 1px solid black;
+}
+.work .job2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  border-top: 1px solid black;
+}
+.work .job3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: lightgrey;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.work li {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+}
+footer {
+  background-color: darkgrey;
+  margin-left: 15%;
+  margin-right: 15%;
+  padding-top: 5%;
+  padding-bottom: 2.5%;
+}
+footer p {
+  align-content: center;
+  display: flex;
+  justify-content: space-around;
+}
