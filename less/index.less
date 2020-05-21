@@ -65,25 +65,40 @@ html, body {
 	box-sizing: border-box;
 	
 	nav {
-		display: flex;
+		display:flex;
 		flex-direction: row;
-		justify-content: space-around;
-		align-content: right;
-		padding:5%;
-		padding-left: 8%;
-		
+		align-content: center;
+		justify-content: space-between;
+		margin: 10%;
+		padding:10%;
+		padding-bottom: 0%;
+		margin-bottom: 0%;
+		margin-top:5%;
+		padding-top: 2%;
+
+		@media(max-width: 500px){
+			flex-direction: column;
+			margin: 15%;
+			padding-left: 25%;
+			font-size: 1.2rem;
+			padding-bottom: 0%;
+		}
 	}
 	.one img {
 		width: 22%;
 		padding-bottom: 2%;
-		
+		@media(max-width: 500px){
+			width: 90%;
+		}
 		
 	}
 	.forone {
+		margin-top:5%;
 		margin-left: 15%;
 	 margin-right: 15%;
 	 padding-top: 5%;
 	 padding-bottom: 5%;
+	
 
 	}
 	.one {
@@ -94,9 +109,13 @@ html, body {
 	 background-color: lightgray;
 	 display: block;
 	 padding-bottom: 10%;
+	
 	 .forone();
 		h1{
 			font-size: 3rem;
+			@media(max-width:500px){
+				font-size: 1.3rem;
+			}
 		}
 		.passion {
 			border-bottom:1px dotted black ;
@@ -128,9 +147,7 @@ html, body {
 	 	// background-color: lightgray;
 	 	display: flex;
 		 padding-bottom: 10%;
-		 @media(maxwidth: 500px){
-			background-color: magenta;
-		}
+		 
 		 .Listen{
 			 h2{
 				 font-size: 2rem;
@@ -142,7 +159,6 @@ html, body {
 			padding-left: 3%;
 			margin-right: 0%;
 			padding-right: 0%;
-		
 			li {
 				text-decoration: none;
 				list-style: none;
@@ -151,31 +167,27 @@ html, body {
 				padding-bottom: 4%;
 				padding-left: 2%;
 				padding-right: 10%;
-		
-			}
 			}
 			h2{
 				font-size: 2rem;
 				padding-bottom: 3%;
 			}
 		}
-			 
-		.liststuff() { 
-			padding-top:1%;
-			padding-bottom:1%;
-			border-top: 1px solid black;}
-				
-
-		.displaystuff() {
-			display: flex;
-			flex-direction: row;
-			justify-content: space-between;}
+	}		 
+		// .liststuff(){ 
+		// 	padding-top:1%;
+		// 	padding-bottom:1%;
+		// 	border-top: 1px solid black;
+		// }
+		// .displaystuff(){
+		// 	display: flex;
+		// 	flex-direction: row;
+		// 	justify-content: space-between;
+		// }
 		
-		@background: lightgrey;
+		 @background: lightgrey;
 
-			.work {
-
-
+	.work {
 				h2 {
 					font-size: 2rem;	
 				}
@@ -185,18 +197,26 @@ html, body {
 				margin-top: 0%;
 				
 				.title{
-					.displaystuff();
-					.liststuff();
+					display: flex;
+					flex-direction: row;
+					justify-content: space-between;
+					padding-top:1%;
+					padding-bottom:1%;
+					border-top: 1px solid black;
 				}
 				.job1 {
-					
-					.displaystuff;
+					.title();
+					border-top: 1px solid black;
 					background-color: @background;
-					.liststuff;
+					
 				}
 				.job2 {
-					.displaystuff;
-					.liststuff;
+					display: flex;
+					flex-direction: row;
+					justify-content: space-between;
+					padding-top:1%;
+					padding-bottom:1%;
+					border-top: 1px solid black;
 				}
 				.job3 {
 					.job1();
@@ -207,9 +227,9 @@ html, body {
 					display: flex;
 					flex-direction: row;
 				}
-				
+			}
 			footer{
-					background-color: blue;
+					background-color:grey;
 					margin-left: 15%;
 					margin-right: 15%;
 					padding-top: 5%;
@@ -218,31 +238,7 @@ html, body {
 						align-content: center;
 						display: flex;
 						justify-content: space-around;
-						
 					}
-					
-					
-				
-				
-				
-				}
 			}
-		}
-			
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 		
-	
-
+		}

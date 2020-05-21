@@ -141,15 +141,43 @@ html nav,
 body nav {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  align-content: right;
-  padding: 5%;
-  padding-left: 8%;
+  align-content: center;
+  justify-content: space-between;
+  margin: 10%;
+  padding: 10%;
+  padding-bottom: 0%;
+  margin-bottom: 0%;
+  margin-top: 5%;
+  padding-top: 2%;
+}
+@media (max-width: 500px) {
+  html nav,
+  body nav {
+    flex-direction: column;
+    margin: 15%;
+    padding-left: 25%;
+    font-size: 1.2rem;
+    padding-bottom: 0%;
+  }
 }
 html .one img,
 body .one img {
   width: 22%;
   padding-bottom: 2%;
+}
+@media (max-width: 500px) {
+  html .one img,
+  body .one img {
+    width: 90%;
+  }
+}
+html .forone,
+body .forone {
+  margin-top: 5%;
+  margin-left: 15%;
+  margin-right: 15%;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 html .one,
 body .one {
@@ -159,6 +187,7 @@ body .one {
   background-color: lightgray;
   display: block;
   padding-bottom: 10%;
+  margin-top: 5%;
   margin-left: 15%;
   margin-right: 15%;
   padding-top: 5%;
@@ -167,6 +196,12 @@ body .one {
 html .one h1,
 body .one h1 {
   font-size: 3rem;
+}
+@media (max-width: 500px) {
+  html .one h1,
+  body .one h1 {
+    font-size: 1.3rem;
+  }
 }
 html .one .passion,
 body .one .passion {
@@ -223,26 +258,24 @@ body .two .stuff li {
   padding-left: 2%;
   padding-right: 10%;
 }
-html .two h2,
-body .two h2 {
+html .two .stuff h2,
+body .two .stuff h2 {
   font-size: 2rem;
   padding-bottom: 3%;
 }
-.liststuff (){
-  padding-top: 1%;
-  padding-bottom: 1%;
-  border-top: 1px solid black;
-}
-.work {
+html .work,
+body .work {
   margin-left: 15%;
   margin-right: 15%;
   margin-bottom: 10%;
   margin-top: 0%;
 }
-.work h2 {
+html .work h2,
+body .work h2 {
   font-size: 2rem;
 }
-.work .title {
+html .work .title,
+body .work .title {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -250,16 +283,18 @@ body .two h2 {
   padding-bottom: 1%;
   border-top: 1px solid black;
 }
-.work .job1 {
+html .work .job1,
+body .work .job1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  border-top: 1px solid black;
   background-color: lightgrey;
-  padding-top: 1%;
-  padding-bottom: 1%;
-  border-top: 1px solid black;
 }
-.work .job2 {
+html .work .job2,
+body .work .job2 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -267,31 +302,34 @@ body .two h2 {
   padding-bottom: 1%;
   border-top: 1px solid black;
 }
-.work .job3 {
+html .work .job3,
+body .work .job3 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  border-top: 1px solid black;
   background-color: lightgrey;
-  padding-top: 1%;
-  padding-bottom: 1%;
-  border-top: 1px solid black;
   border-bottom: 1px solid black;
 }
-.work li {
+html .work li,
+body .work li {
   text-decoration: none;
   display: flex;
   flex-direction: row;
 }
-footer {
-  background-color: darkgrey;
+html footer,
+body footer {
+  background-color: grey;
   margin-left: 15%;
   margin-right: 15%;
   padding-top: 5%;
   padding-bottom: 2.5%;
 }
-footer p {
+html footer p,
+body footer p {
   align-content: center;
   display: flex;
   justify-content: space-around;
 }
-
